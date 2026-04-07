@@ -29,6 +29,7 @@ caption {
 }
 .table1 img {
     display: block;
+	margin:auto;
 }
 .table2 {
 	border-collapse: collapse;
