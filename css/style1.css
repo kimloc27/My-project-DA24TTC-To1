@@ -9,6 +9,12 @@ h1{
     text-align: center;
     color: #2c3e50;
 }
+h2{
+	color: pink;
+}
+h3{
+	color:green;
+}
 caption {
     font-weight: bold;
     margin-bottom: 10px;
@@ -37,5 +43,6 @@ td, th {
     border: 2px solid #999;
     padding: 5px;
 }
+
 	
 	
