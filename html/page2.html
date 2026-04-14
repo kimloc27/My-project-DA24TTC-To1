@@ -1,17 +1,27 @@
 ﻿<!DOCTYPE html>
 <html lang="vi">
       <head>
-	<title>Thi?t k? Web</tittle>
+	<title>Form</title>
 	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "../css/style2.css">
       </head>
       <body>
-	<ul>
-		<li>
-			<a href="assets/
-		</li>
-
-	</ul>
-
+        <div class="container">
+			<form id="frmLogin">
+				<h3 class="title">Đăng nhập hệ thống</h3>
+				<div class="form-group">
+					<label for="txtUsername">Tên đăng nhập:</label>
+					<input class="form-control" type="text" id="txtUsername" name="textUsername" placeholder="Nhập tên đăng nhập">
+				</div>
+				<div class="form-group">
+					<label for="txtPassword">Mật khẩu:</label>
+					<input class="form-control" type="password" id="txtPassword" name="textPassword" placeholder="Nhập mật khẩu">
+				</div>
+					<input class="but" type="submit" name="sbLogin" value="Đăng nhập">
+				    <input class="but" type="reset" name="rsCancel" value="Hủy đăng nhập">
+				
+			</form>
+		</div>
       </body>
 
 
