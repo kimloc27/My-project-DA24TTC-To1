@@ -38,12 +38,16 @@ label{
     width: 100%;
     padding: 2px;
 }
+div.buttons{
+    margin-top: 15px;
+    text-align: center;
+}
 .but{
     color: black;
     font-weight: bolder;
     border-radius: 5px;
     padding: 2px;
-    margin-left: 50px;
+    margin-left: 10px;
     background-color: bisque;
 }
 .but:hover{
