@@ -19,18 +19,18 @@
 				</div>
                         <div class="form-group">
 					<label for="ngaysinh">Năm sinh:</label>
-					<input class="form-control" type="date" id="ngaysinh" name="ngaysinh" required>
+		                  <input class="form-control" type="date" id="ngaysinh" name="ngaysinh" required>
                         </div>
                          <div class="form-group">
                               <label >Giới tính:</label>
-					<input class="form-control" type="radio" id="rdNam" name="gioitinh">
-                              <label for="rdNam">Nam</label>
-                              <input class="form-control" type="radio" id="rdNu" name="gioitinh">
-                              <label for="rdNu">Nữ</label>
+					<input type="radio" id="rdNam" name="gioitinh">
+                                     <label for="rdNam">Nam</label>
+                              <input type="radio" id="rdNu" name="gioitinh">
+                                     <label for="rdNu">Nữ</label>
                         </div>
                         <div class="form-group">
                               <label for="Sblop">Chọn lớp:</label>
-                              <select id="Sblop" name="Sblop" required>
+                              <select class="form-control" id="Sblop" name="Sblop" required>
                                   <option value="" disabled selected>--Chọn mã lớp--</option>
                                   <option value="tta">DA24TTA</option>
                                   <option value="ttb">DA24TTB</option>
@@ -38,10 +38,27 @@
                                   <option value="ttd">DA24TTD</option>
                               </select>
                         </div>
-                </div>
-				    <input class="but" type="submit" name="sbLogin" value="Đăng ký">
-				    <input class="but" type="reset" name="rsCancel" value="Nhập lại">
-				
+                        <div class="form-group">
+                              <label for="txtEmail">Email:</label>
+                                  <input class="form-control" type="email" id="txtEmail" name="txtEmail" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                              <label for="phone">Số điện thoại:</label>
+                                  <input class="form-control" type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                              <label>Điểm mạnh:</label><br>
+                                  <input type="checkbox" name="chkDiemmanh" id="chktkw">
+                                    <label for="chktkw">Biết thiết kế web</label>
+                                  <input type="checkbox" name="chkDiemmanh" id="chkhh">
+                                    <label for="chkhh">Ham học hỏi</label> 
+                                  <input type="checkbox" name="chkDiemmanh" id="chktt">
+                                    <label for="chktt">Trung thực</label>
+                        </div>
+                        <div class="buttons">
+				    <input class="but1" type="submit" name="sbLogin" value="Đăng ký">
+				    <input class="but2" type="reset" name="rsCancel" value="Nhập lại">
+				</div>
 			</form>
 		</div>
 
