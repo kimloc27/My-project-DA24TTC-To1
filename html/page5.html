@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+      <head>
+	<title>Bảng cửu chương</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "../css/style.css">
+      </head>
+      <body>
+            <form id="frmInbangCC">
+                <h2 class="title">In bảng cửu chương</h2>
+                <div>
+					<label for="txtNs">Nhập số:</label>
+					<input class="form-control" type="text" id="txtNs" name="textNs" placeholder="Nhập số " required>
+				       <input type="button" value="In" onclick="inBCC()">
+                </div>
+                <div id="kq">
+                </div>
+            </form> 
+            <script>
+                function inBCC(){
+               const form= document.forms["frmInbangCC"];
+               let so =parseInt("txtNs".value);
+               let kq = "";
+
+               for (let i = 1; i < 11; i++) 
+               {
+                  kq += so + " x " + i + " = " + (so * i) + "<br>";
+                }
+                document.getElementById("kq").innerHTML = kq;
+            }
+</script>
+      </body>
+</html>
