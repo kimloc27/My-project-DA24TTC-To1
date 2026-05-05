@@ -4,40 +4,19 @@
 	<title>Bảng cửu chương</title>
 	<meta charset="utf-8">
 	<link rel = "stylesheet" href = "../css/style6.css">
+      <script src = "../js/lib.js"></script>
       </head>
       <body>
+            <div class = "container">
+                  <div class = "product-list row row-cols-4 g-e" id = "product-list">
+
+                  </div>
+
+            </div>
             <script>
-                const newDiv=document.createElement("div");
-                newDiv.setAttribute("class","product-item");//gán thuộc tính class vào newDiv
-
-                const productImage=document.createElement("div");
-                productImage.setAttribute("class","product-image");
-
-                const productImageNode=document.createElement("img");
-                productImageNode.setAttribute("src","../assets/images/xe.jpg");
-                productImageNode.setAttribute("alt","Ảnh sản phẩm");
-                productImage.appendChild(productImageNode);
-               
-                const productName=document.createElement("h2");
-                productName.innerText= "Siêu xe Ferrari";
-                const productPrice=document.createElement("p");
-                productPrice.innerText= "3.9 triệu USD";
-                const productLink=document.createElement("a");
-                productLink.innerText= "Xem chi tiết";
-                productLink.setAttribute("href","https://vnexpress.net/ferrari-f80-trinh-lang-sieu-xe-hybrid-gia-3-9-trieu-usd-4806199.html")
-                productLink.setAttribute("target","_blank");
-
-                const productInfo = document.createElement("div")
-                productInfo.setAttribute("class","product-info");
-                productInfo.appendChild(productName);
-                //productInfo.appendChild(document.createElement("br"));
-                productInfo.appendChild(productPrice);
-                //productInfo.appendChild(document.createElement("br"));
-                productInfo.appendChild(productLink);
-
-                newDiv.appendChild(productImage);
-                newDiv.appendChild(productInfo);
-                document.body.appendChild(newDiv);//Gán vào body
+               productList.forEach(function(item){
+                  addProduct(item.id, item.name, item.price, item.image, item.productList);
+               });
             </script>
       </body>
 </html>
